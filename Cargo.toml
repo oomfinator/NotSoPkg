@@ -1,0 +1,15 @@
+[package]
+name = "unpkg"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+apple-xar = "0.20.0"
+clap = { version = "4.5.40", features = ["derive"] }
+cpio = "0.4.1"
+cpio_reader = "0.1.2"
+flate2 = "1.1.2"
+glob = "0.3.2"
+log = "0.4.27"
+pretty_env_logger = "0.5.0"
+xar = "0.1.1"
