@@ -1036,6 +1036,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "notsopkg"
+version = "0.1.0"
+dependencies = [
+ "apple-xar",
+ "clap 4.5.40",
+ "cpio",
+ "cpio_reader",
+ "flate2",
+ "glob",
+ "log",
+ "pretty_env_logger",
+ "xar",
+]
+
+[[package]]
 name = "num-traits"
 version = "0.2.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1918,21 +1933,6 @@ name = "unicode-xid"
 version = "0.2.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ebc1c04c71510c7f702b52b7c350734c9ff1295c464a03335b00bb84fc54f853"
-
-[[package]]
-name = "notsopkg"
-version = "0.1.0"
-dependencies = [
- "apple-xar",
- "clap 4.5.40",
- "cpio",
- "cpio_reader",
- "flate2",
- "glob",
- "log",
- "pretty_env_logger",
- "xar",
-]
 
 [[package]]
 name = "untrusted"

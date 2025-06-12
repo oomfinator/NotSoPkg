@@ -65,7 +65,10 @@ fn _main() -> Result<(), Box<dyn Error>> {
     Package::new(&input)
         .unpack_into(&output)?;
     
-    for entry in glob("**/Payload").unwrap() {
+    let mut pattern = output.clone();
+    pattern.push("**/Payload");
+    
+    for entry in glob(pattern.to_str().unwrap())? {
         info!("Extracting payload");
         let path = entry?;
         Payload::new(&path)
